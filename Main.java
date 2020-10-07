@@ -1,6 +1,7 @@
+import java.util.Scanner;
 /**
- *
- * @author 
+ * This program asks a user for a number between 1 and 10 and draw a line of * that is the size that was asked for
+ * @author David Toma
  */
 public class Main {
 
@@ -9,7 +10,18 @@ public class Main {
    * @param args the command line arguments
    */
   public static void main(String[] args) {
-    // TODO code application logic here
+    // create a scanner for user input
+    Scanner input = new Scanner(System.in);
+
+    // ask user for a number between 1 and 10
+    System.out.println("Please enter a number between 1 and 10");
+    int integer = input.nextInt();
+
+    for(int count = 1; count <= integer; count++){
+      System.out.print("*");
+    }
+      
+    
     
   }
 }
